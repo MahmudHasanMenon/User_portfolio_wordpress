@@ -1,0 +1,12 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-bootstrap-blocks-row {
+	&.alignfull > .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

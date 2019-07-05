@@ -47,11 +47,22 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery-2.1.1.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/bootstrap.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/bootstrap.min.css"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- TypeKit Fonts -->
 <script src="//use.typekit.net/gla7wnd.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
+
+<script>
+  AOS.init();
+</script>
+
+<script>
+	$(window).scroll(function(){
+		$('nav').toggleClass('scrolled', $(this).scrollTop() > 500);
+	});
+	</script>
 
 </body>
 </html>

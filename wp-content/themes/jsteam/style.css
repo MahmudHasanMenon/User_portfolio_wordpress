@@ -14,9 +14,13 @@ body {
 	font-size: 16px;
 }
 
-.navbar-nav {
- margin-left: 5px;
+.navbar-dark {
+	transition: 500ms ease;
+	background-color: transparent !important;  
+}
 
+.navbar-dark.scrolled {
+	background-color: #3b5998 !important;
 }
 
 .ml-auto  {
@@ -260,6 +264,7 @@ form textarea {
 	color: white;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
+	 
 }
 
 #hero article { 

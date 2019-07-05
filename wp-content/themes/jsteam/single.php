@@ -1,7 +1,11 @@
 <?php
- 	
-get_header();
-?>
+/**
+ * The template for displaying all single posts.
+ *
+ * @package Bootstrap to WordPress
+ */
+
+get_header(); ?>
 
 
 <section id="hero" data-type="background" data-speed="5"  style="background: url(<?php echo get_theme_file_uri('assets/img/header.jpg')?>)50% 0 repeat fixed">
@@ -25,42 +29,32 @@ get_header();
 	<div class="container">
 		<div class="row" id="primary">
 				
-			<main id="content" class="col-sm-8" role="main">
-			
-			<?php if ( have_posts() ) : ?>
+			<main id="content" class="col-sm-8">
 
-			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+	
+				<?php get_template_part( 'content', 'single' ); ?>
+	
+				 
+	
 				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
+					// If comments are open or we have at least one comment, load up the comment template
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
 				?>
-
-			<?php endwhile; ?>
-
-		 
-
-			<?php else : ?>
 	
-				<?php get_template_part( 'content', 'none' ); ?>
-	
-			<?php endif; ?>
+			<?php endwhile; // end of the loop. ?>
+
+			</main><!-- #content -->
 			
-			</main><!-- content -->
-		
 			<!-- SIDEBAR
 			================================================== -->
 			<aside class="col-sm-4">
-			<?php get_sidebar(); ?>
+				<?php get_sidebar(); ?>
 			</aside>
-		
-		</div><!-- primary -->
-	</div><!-- container -->
+			
+		</div><!-- #primary -->
+	</div><!-- .container -->
 
-<?php
-get_footer();
-?>
+<?php get_footer(); ?>

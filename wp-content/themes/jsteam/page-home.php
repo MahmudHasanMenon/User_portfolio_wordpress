@@ -28,7 +28,7 @@ get_header();
     		<div class="container clearfix">
     			<div class="row">
 		    		
-		    		<div class="col-sm-7 hero-text">
+		    		<div class="col-sm-7 hero-text" data-aos="fade-right" data-aos-duration="1500">
 			    		<h1><?php bloginfo('name');?></h1>
 			            <p class="lead">Earn An Extra $1k - $5k a Month by Learning to Code Your Very Own Responsive &amp; Custom WordPress Websites with Bootstrap</p>
 			            
@@ -44,7 +44,7 @@ get_header();
   <section id="boost-income" style="background: url(<?php echo get_theme_file_uri('assets/img/tile.jpg')?>)">
 		<div class="container">
 			
-			<div class="section-header">
+			<div class="section-header" data-aos="fade-left" data-aos-duration="1500">
 			<?php if( !empty($income_feature_image) ) : ?>
 			
 			<img src="<?php echo $income_feature_image['url']; ?>" alt="<?php echo $income_feature_image['alt']; ?>">
@@ -56,13 +56,13 @@ get_header();
 			</div><!-- section-header -->
 			
 			<p class="lead"><?php echo $income_feature_description; ?></p>
-			<div class="row">
+			<div class="row" data-aos="zoom-in" data-aos-duration="1500">
 				<div class="col-sm-6">
 					<h3><?php echo $reason1_title; ?></h3>
 					<p><?php echo $reason1_description; ?></p>
 				</div><!-- end col -->
 				
-				<div class="col-sm-6">
+				<div class="col-sm-6" data-aos="zoom-in" data-aos-duration="1500">
 					<h3><?php echo $reason2_title; ?></h3>
 					<p><?php echo $reason2_description; ?></p>
 				</div><!-- end col -->
@@ -77,7 +77,7 @@ get_header();
 	<section id="who-benefits">
 		<div class="container">
 			
-			<div class="section-header">
+			<div class="section-header" data-aos="fade-up" data-aos-duration="1500">
 			 
 			<?php if( !empty($who_feature_image) ) : ?>
 			
@@ -88,7 +88,7 @@ get_header();
 			<h2><?php echo $who_feature_title; ?></h2>
 			</div><!-- section-header -->
 			
-			<div class="row align-items-center justify-content-center">
+			<div class="row align-items-center justify-content-center" data-aos="zoom-in">
 				<div class="col-sm-8 col-sm-offset-2  ">
 				
 				<?php echo $who_feature_body; ?>
@@ -108,17 +108,17 @@ get_header();
 			<p class="lead">Throughout this entire course, you work towards building an incredibly beautiful website. Want to see the website <strong>you</strong> are going to build? <em>You're looking at it!</em> The website you're using right now is the website you will have built entirely by yourself, by the end of this course.</p>
 			
 			<div class="row">
-				<div class="col-sm-4" data-aos="zoom-in">
+				<div class="col-sm-4" data-aos="zoom-in" data-aos-duration="1500">
 					<img src="<?php echo get_theme_file_uri('assets/img/icon-design.png')?>" alt="Design">
 					<h3>Sexy &amp; Modern Design</h3>
 					<p>You get to work with a modern, professional quality design &amp; layout.</p>
 				</div><!-- col -->
-				<div class="col-sm-4" data-aos="zoom-in">
+				<div class="col-sm-4" data-aos="zoom-in" data-aos-duration="1500">
 					<img src="<?php echo get_theme_file_uri('assets/img/icon-code.png')?>" alt="Code">
 					<h3>Quality HTML5 &amp; CSS3</h3>
 					<p>You'll learn how hand-craft a stunning website with valid, semantic and beautiful HTML5 &amp; CSS3.</p>
 				</div><!-- col -->
-				<div class="col-sm-4" data-aos="zoom-in" >
+				<div class="col-sm-4" data-aos="zoom-in" data-aos-duration="1500" >
 					<img src="<?php echo get_theme_file_uri('assets/img/icon-cms.png')?>" alt="CMS">
 					<h3>Easy-to-use CMS</h3>
 					<p>Allow your clients to easily update their websites by converting your static websites to dynamic websites, using WordPress.</p>
@@ -136,7 +136,12 @@ get_header();
 			<div class="row align-items-center justify-content-center ">
 				<div class="col-sm-8 col-sm-offset-2">
 					<h2>Watch the Course Introduction</h2>
-					<iframe width="100%" height="415" src="//www.youtube.com/embed/q-mJJsnOHew" frameborder="0" allowfullscreen></iframe>
+					<iframe data-aos="fade-left"
+					        data-aos-duration="1500"
+							width="100%" height="415" 
+							src="//www.youtube.com/embed/q-mJJsnOHew" 
+							frameborder="0" allowfullscreen>
+						</iframe>
 				</div><!-- end col -->
 			</div><!-- row -->			
 		</div><!-- container -->
@@ -144,7 +149,8 @@ get_header();
 
 		<!-- INSTRUCTOR
 	================================================== -->
-	<section id="instructor" style="background: url(<?php echo get_theme_file_uri('assets/img/brad-elvis.png')?>) 90% -10px no-repeat">
+	<section id="instructor" data-aos="zoom-in-up"
+					        data-aos-duration="1500" style="background: url(<?php echo get_theme_file_uri('assets/img/brad-elvis.png')?>) 90% -10px no-repeat">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8 col-md-6">
@@ -174,7 +180,8 @@ get_header();
 					<div class="row">
 						<div class="col-xs-4">
 							<div class="num">
-								<div class="num-content">
+								<div class="num-content" data-aos="fade-right"
+					        data-aos-duration="1500">
 									41,000+ <span>students</span>
 								</div><!-- num-content -->
 							</div><!-- num -->
@@ -182,7 +189,8 @@ get_header();
 						
 						<div class="col-xs-4">
 							<div class="num">
-								<div class="num-content">
+								<div class="num-content" data-aos="zoom-in-up"
+					        data-aos-duration="1500">
 									568 <span>reviews</span>
 								</div><!-- num-content -->
 							</div><!-- num -->
@@ -190,7 +198,8 @@ get_header();
 						
 						<div class="col-xs-4">
 							<div class="num">
-								<div class="num-content">
+								<div class="num-content" data-aos="fade-left"
+					        data-aos-duration="1500">
 									8 <span>courses</span>
 								</div><!-- num-content -->
 							</div><!-- num -->
@@ -212,7 +221,7 @@ get_header();
 					<h2>What People Are Saying About You</h2>
 					
 					<!-- TESTIMONIAL -->
-					<div class="row testimonial">
+					<div class="row testimonial" data-aos="fade-left" data-aos-duration="1500">
 						<div class="col-sm-4">
 							<img src="<?php echo get_theme_file_uri('assets/img/brennan.jpg')?>" alt="Brennan">
 						</div><!-- end col -->
@@ -225,7 +234,7 @@ get_header();
 					</div><!-- row -->
 					
 					<!-- TESTIMONIAL -->
-					<div class="row testimonial">
+					<div class="row testimonial" data-aos="fade-right" data-aos-duration="1500">
 						<div class="col-sm-4">
 							<img src="<?php echo get_theme_file_uri('assets/img/ben.png')?>" alt="Illustration of a man with a moustache">
 						</div><!-- end col -->
@@ -238,7 +247,7 @@ get_header();
 					</div><!-- row -->
 					
 					<!-- TESTIMONIAL -->
-					<div class="row testimonial">
+					<div class="row testimonial" data-aos="fade-left" data-aos-duration="3000">
 						<div class="col-sm-4">
 							<img src="<?php echo get_theme_file_uri('assets/img/aj.png')?>" alt="Illustration of a man with a beard">
 						</div><!-- end col -->

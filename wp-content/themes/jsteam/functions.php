@@ -44,4 +44,37 @@ function GoogleMapKey($api) {
 }
 
 add_filter('acf/fields/google_map/api', 'GoogleMapKey');
+
+/**
+ * Replaces the excerpt "more" text by a link.
+ */
+function new_excerpt_more($more) {
+    global $post;
+	return '... <a class="moretag" href="'. get_permalink($post->ID) . '"> continue reading &raquo;</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function bootstrap2wordpress_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Sidebar', 'bootstrap2wordpress' ),
+		'id'            => 'sidebar-1',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+	
+	register_sidebar( array(
+		'name'          => __( 'Extra Sidebar', 'bootstrap2wordpress' ),
+		'id'            => 'sidebar-2',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+}
+add_action( 'widgets_init', 'bootstrap2wordpress_widgets_init' );
+
  

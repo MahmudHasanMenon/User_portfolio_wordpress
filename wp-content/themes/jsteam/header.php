@@ -15,13 +15,16 @@
         <div class="container"><a class="navbar-brand" href="#"><strong>Material Landing</strong></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-              <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-              <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul> 
+          <?php
+						wp_nav_menu( array(
+							
+							'theme_location'	=> 'primary',
+							'container'			=> 'nav',
+							'container_class'	=> 'navbar-collapse collapse',
+							'menu_class'		=> 'nav navbar-nav ml-auto'
+							
+						) );
+					?>
           </div>
         </div>
       </nav>

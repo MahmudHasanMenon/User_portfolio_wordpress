@@ -52,6 +52,8 @@
             <ul class="social-network social-circle">
              <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
              <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-google-plus"></i></a></li>
+             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-twitter"></i></a></li>
             </ul>				
 		</div>
     </div>
@@ -89,7 +91,7 @@
 
 <script>
 	$(window).scroll(function(){
-		$('nav').toggleClass('scrolled', $(this).scrollTop() > 350);
+		$('nav').toggleClass('scrolled', $(this).scrollTop() > 400);
 	});
 	</script>
 

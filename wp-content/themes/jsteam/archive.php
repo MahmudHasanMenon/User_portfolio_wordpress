@@ -7,12 +7,13 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-    <section id="hero" data-type="background" data-speed="5"  style="background: url(<?php echo get_theme_file_uri('assets/img/header.jpg')?>)50% 0 repeat fixed">
-    
+ <section id="hero" data-type="background" data-speed="5"  style="background: url(<?php echo get_theme_file_uri('assets/img/header.jpg')?>)50% 0 repeat fixed">
+        <article>
+    	
     <div class="container clearfix">
-    			<div class="row">
-    <div class="col-sm-7 hero-text" data-aos="fade-right" data-aos-duration="1500">  
-    <h1 class="page-title">
+           <div class="row">
+    <div class="col-sm-9 center hero-text" data-aos="fade-right" data-aos-duration="1500">  
+    <h1>
 					<?php
 						if ( is_category() ) :
 							single_cat_title();
@@ -74,9 +75,10 @@ get_header(); ?>
 				?>
         </h1>
         </div>
-        </div>
-        </div>
-			</section>
+     </div>
+    </div>
+		</article>
+	</section>
 
 			<div class="container">
 				<div id="primary" class="row">
